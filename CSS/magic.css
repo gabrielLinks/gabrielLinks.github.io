@@ -1,0 +1,195 @@
+
+body{
+    background-color:  #202124;
+    margin: 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: end;
+    height: 10vh;
+    gap: 20px;
+    align-items: center;
+    margin-right: 10px;
+    color: aliceblue;
+    
+}
+nav a {
+    text-decoration: none;
+    color: azure;
+    font-size: 15px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.perfil{
+    width: 35px;
+    border-radius: 30px;
+}
+.perfil:hover{
+
+    box-shadow:2px 4px 10px 4px rgba(8, 8, 8,8);
+    border-radius:38px ;
+}
+.chocolate {
+    width: 25px;
+    height: 25px;
+    
+
+}
+.chocolate:hover{
+    box-shadow: 2px 4px 10px 4px rgba(8, 8, 8,8);
+    border-radius: 80px;
+}
+
+main{display: flex;
+    height: 60vh;
+    min-width: 40%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-google{
+    display: flex;
+    justify-content: center;
+    height: 145px;
+    width: 500px;
+    }
+
+.google{
+    display: flex;
+    height:200px;
+    margin: top 0px; 
+    margin-bottom: 0px;
+}    
+
+main .input{
+    display: flex;
+    border: 1px solid rgba(206, 208, 209, 0.582);
+    max-width: 40%;
+    min-width: 40%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.input{
+    display: flex;
+    min-width: 100px;
+    max-width: 500px;
+}
+
+input{
+    display: flex;
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #202124;
+    color: white;
+}
+
+main .input:hover{
+    box-shadow: 0 1px 6px 0 #444549
+}
+
+.lupa{
+    background-image:url(../images/lupa.png) ;
+    background-size:contain ;
+    background-repeat:no-repeat ;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+
+}
+
+
+.voz{
+    background-image: url(../images/voz-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+}
+.camara{
+    background-image: url(../images/camara.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+}
+
+.botones{
+    display: flex;
+    gap: 20px;
+}
+.botones button{
+    height: 36px;
+    min-width: 54px;
+    background-color: rgba(221, 218, 215, 0.199);
+    border: none;
+    font-size: 15px;
+    color:white;
+    border-radius: 4px;
+}
+.botones button:hover{
+    border: 1px solid rgb(233, 230, 229);
+    box-shadow: 1px solid rgb(12, 12, 68);
+    border-radius: 5px;
+}
+footer{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    
+    
+
+}
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color:#171717;
+    height: 10vh;
+    
+}
+.info  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+    text-decoration: none;
+}
+.info a{
+    text-decoration: none;
+    color: #747171;
+    font-size: 16px;
+}
+.info a:hover{
+    text-decoration: underline;
+}
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    height:50px;
+    background-color:#171717;
+    padding-left: 20px;
+    border-bottom: 1px solid #3c4043
+    
+}
+.text p{
+    font-size: 16px;
+    color:#747171;
+}
