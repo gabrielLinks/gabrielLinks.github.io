@@ -16,27 +16,71 @@
 
     
 
-    <div class="contenido flex">
+    <div class="contenido flex " id="contenido">
+
+        <div class="cajagato" id="cajagato">
         <img class="fondo" src="img3/fondo-removebg-preview.png"  id="foto" alt="">
-
-        <div class="planilla1 flex" id="lista">
-        <div class="planilla2">
-        </div>
         </div>
         
-    </div>
-    
+        <div class="ficha " id="ficha">
+            <img  class="img-tarea" id="img-tarea" src="img3/bomberman.png" alt="">
+            <div class="texto">
+                <ul id="contenedor">
 
-
-    <div class="btn flex" id="btnplus">
-        <a href=""><img  class="imagen" id="btnplus" src="img3/plusbotton.png" alt="boton con el +"></a>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div class="planilla1 flex desactivar" id="lista">
+            <div class="plantilla2 ">
+            <form action="">
+                <h2>Nueva nota</h2>
+                <hr>
+                <label for="tarea">Nombre de la tarea</label>
+                <input  type="text" value="" id="dato1">
+                    <label for="tipo-tarea">Tipo de tarea</label>
+                <select class="opciones" name="tipo-tarea" id="tipoTarea">
+                <option value="">Elegir tipo de tarea</option>
+                <option value="personal">Personal</option>
+                <option value="domestica">Domestica</option>
+                <option value="entretenimiento">Entretenimiento</option>
+                <option value="laboral">Laboral</option>
+                </select>
+                    <label for="descipcion">Descripcion</label>
+                <input type="text" value="" id="dato2">
+                    <label for="prioridad">Prioridad</label>
+                <select class="opciones" name="prioridad" id="prioridad">
+                <option value="">Prioridad de la tarea</option>
+                <option value="baja">Baja</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+                <option value="urgente">Urgente</option>
+                </select>
+                
+            </form>
+            <button class="botin" id="cancelarTarea">Cancelar</button>
+            <button class="botin" id="creaTarea">Crear tarea</button>
+            </div>
         
     </div>
+    </div>
+
+
+<div class="btn flex" id="btnplus">
+    <button id="btn">
+        <img  class="imagen"  src="img3/plusbotton.png" alt="boton con el +">
+    </button>
+</div>
 
 
     <footer class="piedepagina flex">
-        <h4>Created by Gabriel Elizondo</h4>
+        <h3>Created by Gabriel Elizondo</h3>
     </footer>
+
+
+    
     <script src="reto3.js"></script>
+
 </body>
 </html>
