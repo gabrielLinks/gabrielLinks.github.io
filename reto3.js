@@ -57,28 +57,36 @@ creatarea.addEventListener('click',function(){
     let txt2 = document.getElementById('dato2').value;
     let txt3  = document.getElementById('tipoTarea').value;
     let txt4 = document.getElementById('prioridad').value;
-    let modelo =`<li class="soyli" id="soyli">
-    <h2 class="soyh2">${txt}</h2>
-    <h4 class="soyh4">${txt3}</h4>
-    <h6 class="soyh6">${txt2}</h6>
-    <h6 class="soy6">${txt4}</h6>
-    <button class="btn" id="button">x</button>
+    let modelo =`<lu class="soylu" id="soylu">
+    <li class="soyli" id="soyli">
+    <h2 class="soyh">${txt}</h2>
+    <h4 class="soyh">${txt3}</h4>
+    <h6 class="soyh">${txt2}</h6>
+    <h6 class="soyh">${txt4}</h6>
+    
     </li> 
+    </lu>
+    <button class="botas" id="button">x</button>
     `
-    padre.innerHTML+= modelo
+    
+    padre.innerHTML += modelo    
+    
+    
     
     let button = document.getElementById('button').addEventListener('click',function(){
-        let soyli = document.getElementById('soyli')
-        soyli.remove()
-        if(padre== -1){
-        cajagato.classList.add('activar')
-    }
-
-        
+        let soylu = document.getElementById('soylu')
+        soylu.remove()     
     })
+    if(soylu==''){
+        cajagato.classList.add('activar')
+
+    }
     
     
 })
+
+
+
 
 
 
