@@ -46,49 +46,61 @@ cancelartarea.addEventListener('click', function(){
 
 
 
-let padre = document.getElementById('contenedor')
+let padre= document.getElementById('contenedor')
 
+creatarea.addEventListener('click',(e)=>{
+    const texto1 = document.getElementById('dato1').value;
+    const texto2 =document.getElementById('dato2').value;
+    let texto3  = document.getElementById('tipoTarea').value;
+    let texto4 = document.getElementById('prioridad').value;
+    const li = document.createElement('li');
+    li.className="soyli"
+    const h2 = document.createElement('h2');
+    h2.textContent = texto1;
+    h2.className="soyh";
+    const h3 = document.createElement('h3');
+    h3.textContent = texto2;
+    h3.className="soyh";
+    const h4 = document.createElement('h4');
+    h4.textContent = texto3;
+    h4.className="soyh";
+    const h5 = document.createElement('h5');
+    h5.textContent = texto4;
+    h5.className="soyh";
 
-creatarea.addEventListener('click',function(){
-    
-    padre.innerHTML=''
+    li.appendChild(h2);
+    li.appendChild(h3);
+    li.appendChild(h4);
+    li.appendChild(h5)
+    li.appendChild(botonBorrar());
+    padre.appendChild(li);
 
-    let txt = document.getElementById('dato1').value;
-    let txt2 = document.getElementById('dato2').value;
-    let txt3  = document.getElementById('tipoTarea').value;
-    let txt4 = document.getElementById('prioridad').value;
-    let modelo =`<lu class="soylu" id="soylu">
-    <li class="soyli" id="soyli">
-    <h2 class="soyh">${txt}</h2>
-    <h4 class="soyh">${txt3}</h4>
-    <h6 class="soyh">${txt2}</h6>
-    <h6 class="soyh">${txt4}</h6>
-    
-    </li> 
-    </lu>
-    <button class="botas" id="button">x</button>
-    `
-    
-    padre.innerHTML += modelo    
     
     
-    
-    let button = document.getElementById('button').addEventListener('click',function(){
-        let soylu = document.getElementById('soylu')
-        soylu.remove()     
-    })
-    if(soylu==''){
-        cajagato.classList.add('activar')
+});
 
+function botonBorrar(){
+    const botonX = document.createElement("button")
+    botonX.textContent="X";
+    botonX.className ="botonX";
+    botonX.addEventListener('click',(e)=>{
+        const item = e.target.parentElement;
+        padre.removeChild(item);
+        const items = document.querySelectorAll('li');
+        if(items.length === 0){
+            cajagato.classList.remove('desactivar')
+            ficha.classList.remove('activar')
+        }
+    });
+    return botonX;
     }
-    
-    
-})
 
 
 
 
 
 
+
+//remove.('activar')
 
 

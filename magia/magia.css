@@ -89,16 +89,6 @@ button{
     
 }
 
-
-
-.ficha{
-    height: 50px;
-    border: 2px solid #ebebeb;
-    border-radius: 5px;
-    background-color: #f4f7f9;
-
-}
-
 .img-tarea{
     display: flex;
     justify-content: flex-start;
@@ -111,47 +101,65 @@ button{
 
 .ficha{
     display: flex;
-    height:80px;
-    width: 400px;
-    background-color: #515eec9e;
+    height:325px;
+    width: 500px;
+    background-color: #515eec71;
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+    
 }
 
 .texto{ 
     display: flex;
-    background-color:#515eec9e;
-    height: 100%;
-    width: 100%;
+    
+    background-color:#515eec64;
+    height: 321px;
+    width: 500px;
+    
+    
 }
 
-.soylu, .soyli, .soyh {
+
+.soyul{
     display: flex;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+    width: 430px;
+    height: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
     flex-direction: column;
+    align-content: flex-start;
     color: white;
+    
+    
+}
+
+.soyli{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #8b09a292;
+    border-left:2px solid #8b09a292;
+}
+
+.soyh{
+display: flex;
+flex-direction: column-reverse;
+
 }
 h2{
-    display: flex;
-    align-items: center;
+    justify-content: start;
+    margin-left: 5px;
+    margin-bottom: 0px;
     
 
-
 }
-h4{
-display: flex;
-
-
+.botonX{
+    background-color: #e7b9f3;
 }
-
-h6{
-    display: flex;
-    align-items: center;
+.botonX:hover{
+    background-color:  #ec407a;
+    border: solid 2px #ffffff;
 }
-
-
-
-
 .desactivar{
     display: none;
 
