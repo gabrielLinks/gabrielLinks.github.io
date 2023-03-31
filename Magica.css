@@ -5,11 +5,16 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .elEfecto{
     display: flex;
     justify-content: center;
     
+}
+.sinEfecto{
+    display: none;
 }
 header{
     display: flex;
@@ -28,4 +33,42 @@ header{
     display: flex;
     flex-direction: column;
 
+}
+h2{
+    color: wheat;
+}
+
+
+.magobola{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 150%;
+}
+.jugador1{
+    color: rgba(236, 49, 49, 0.703);
+}
+.jugador2{
+    color:rgb(192, 39, 31)
+}
+.combo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content:right;
+    }
+    
+.img-carta{
+    width: 80%;
+    padding-left: 85px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.jugadores{
+    color: rgba(245, 245, 245, 0.71);
+}
+
+
+p{
+    color: aquamarine;
 }
