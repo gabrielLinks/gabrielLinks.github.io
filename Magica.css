@@ -51,7 +51,7 @@ h3{
     height: 150%;
 }
 .jugador1{
-    color: #44616f;
+    color:#5c5589;
     margin-bottom: 50px;
 }
 
@@ -73,14 +73,14 @@ h3{
     border-style:outset;
     border-radius: 10px;
     background: transparent;
-    color: #327476;
+    color: #f8f8f5;
 }
 
 ::placeholder{
     color: rgba(225, 218, 20, 0.821);
 }
 .jugador2{
-    color:rgb(192, 39, 31);
+    color:#5c5589;
     margin-bottom: 50px;
 }
 .combo{
