@@ -37,52 +37,54 @@ header{
     flex-direction: column;
 
 }
-h2{
-    color: wheat;
-}
+
 
 h3{
     color :rgb(136, 18, 95);
+    
 }
 
 .magobola{
     display: flex;
     justify-content: center;
-    width: 600px;
-    height: 150%;
+    width: 70vh;
+    height: 100vh;
 }
 .jugador1{
-    color:#5c5589;
-    margin-bottom: 50px;
+    color:#6f66a6;
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 .pj1{
     display: block;
     background: transparent;
     border: none;
-    color: #5F9EA0;
+    color: #6f66a6;
 }
 .pj2{
     display: block;
     background: transparent;
     border: none;
-    color: #5F9EA0;
+    color: #ff4081;
 }
 .mezclador{
     
-    margin-top: 20px;
-    border-style:outset;
+    margin-top: 60px;
+
     border-radius: 10px;
     background: transparent;
     color: #f8f8f5;
 }
 
+
 ::placeholder{
-    color: rgba(225, 218, 20, 0.821);
+    color: #ffffff;
 }
 .jugador2{
-    color:#5c5589;
+    color:  #ff4081;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 .combo{
     display: flex;
@@ -107,14 +109,22 @@ h3{
 .descriPersonaje{
 color: #FFF8DC;
 margin-top: 30px;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
 }
+
 .nombreCarta{
+
     margin-top: 30px;
 color: #008B8B;
+margin-left: 15px;
+
     }
 
 .botonesFinal{
-    margin-top: 80px;
+    margin-top: 150px;
+    margin-bottom: 0px;
 }
 
 .btnVolver{
@@ -129,4 +139,10 @@ color: #008B8B;
     color: white;
     
     margin-left: 30px;
+}
+.colorpj1{
+    color: #6f66a6;
+}
+h3{
+    text-align: center;
 }

@@ -1,11 +1,5 @@
 const miMazo = [
-    {
-    id:0,
-    imagen:'imagenesRet4/carta29.TheBeast.png',
-    nombre:'The Beast',
-    descrip:'La bestia te encontrara, no importa donde te escondas o que tanto huyas el rastro que dejas de miedo el lo encontrara',
-    ataque:350
-},
+
 {
     id:1,
     imagen:'imagenesReto4/carta2.png',

@@ -45,6 +45,7 @@ function reset(){
 function volver(){
 pantalla3.style.display='none';
 pantalla1.style.display='block';
+hederloco.style.display='flex'
     reset()
 }
 
@@ -100,9 +101,9 @@ while(player2.length <3){
 
     let elem = event.relatedTarget.getAttribute('data-id');
     if (elem < 4){
-        jugadoresCuenta.innerHTML = `<h3>Estas cartas son de ${jugador1.value}</h3>`
+        jugadoresCuenta.innerHTML = `<h3 class="colorpj1">Estas cartas son de ${jugador1.value}</h3>`
     } else {
-        jugadoresCuenta.innerHTML = `<h3>Estas cartas son de ${jugador2.value}</h3>`
+        jugadoresCuenta.innerHTML = `<h3 class="colorpj2">Estas cartas son de ${jugador2.value}</h3>`
     }
 
 
