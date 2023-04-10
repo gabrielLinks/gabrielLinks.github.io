@@ -54,6 +54,7 @@ h3{
     color:#6f66a6;
     margin-bottom: 30px;
     margin-top: 50px;
+    text-align: center;
 }
 
 .pj1{
@@ -80,11 +81,13 @@ h3{
 
 ::placeholder{
     color: #ffffff;
+    text-align: center;
 }
 .jugador2{
     color:  #ff4081;
     margin-bottom: 50px;
     margin-top: 50px;
+    text-align: center;
 }
 .combo{
     display: flex;
@@ -107,22 +110,28 @@ h3{
 
 
 .descriPersonaje{
+
+display: flex;
 color: #FFF8DC;
-margin-top: 30px;
+margin-top: 50px;
 text-align: center;
-margin-left: 10px;
-margin-right: 10px;
+margin-left: 15px;
+margin-right: 15px;
+
 }
 
 .nombreCarta{
 
-    margin-top: 30px;
+margin-top: 30px;
 color: #008B8B;
 margin-left: 15px;
 
-    }
+}
+
 
 .botonesFinal{
+    display: flex;
+    justify-content: space-between;
     margin-top: 150px;
     margin-bottom: 0px;
 }
@@ -138,7 +147,7 @@ margin-left: 15px;
     background: transparent;
     color: white;
     
-    margin-left: 30px;
+    margin-left: 60px;
 }
 .colorpj1{
     color: #6f66a6;
