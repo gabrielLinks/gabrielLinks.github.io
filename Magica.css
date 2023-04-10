@@ -1,7 +1,9 @@
-body{ 
+
+body{
+    background: url(imagenesReto4/fondobotonn333333.gif);
     width: 100%;
     height: 100%;
-    background: url(imagenesReto4/fondoboytt.png);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
@@ -38,6 +40,9 @@ h2{
     color: wheat;
 }
 
+h3{
+    color :rgb(229, 9, 9);
+}
 
 .magobola{
     display: flex;
@@ -46,10 +51,37 @@ h2{
     height: 150%;
 }
 .jugador1{
-    color: rgba(236, 49, 49, 0.703);
+    color: #44616f;
+    margin-bottom: 50px;
+}
+
+.pj1{
+    display: block;
+    background: transparent;
+    border: none;
+    color: #5F9EA0;
+}
+.pj2{
+    display: block;
+    background: transparent;
+    border: none;
+    color: #5F9EA0;
+}
+.mezclador{
+    
+    margin-top: 20px;
+    border-style:outset;
+    border-radius: 10px;
+    background: transparent;
+    color: #327476;
+}
+
+::placeholder{
+    color: rgba(225, 218, 20, 0.821);
 }
 .jugador2{
-    color:rgb(192, 39, 31)
+    color:rgb(192, 39, 31);
+    margin-bottom: 50px;
 }
 .combo{
     display: flex;
@@ -69,6 +101,31 @@ h2{
 }
 
 
-p{
-    color: aquamarine;
+
+
+.descriPersonaje{
+color: #FFF8DC;
+margin-top: 30px;
+}
+.nombreCarta{
+    margin-top: 30px;
+color: #008B8B;
+    }
+
+.botonesFinal{
+    margin-top: 80px;
+}
+
+.btnVolver{
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    margin-right: 100px;
+}
+.btnResultados{
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    
+    margin-left: 30px;
 }

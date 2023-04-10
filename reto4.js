@@ -69,8 +69,8 @@ cartasJuego.forEach((miMazo, index) => {
     }
     carrousel.innerHTML += `<div class="carousel-item ${active}" class="org" data-id=${index + 1}>
     <img src=${miMazo.imagen} class="img-carta" class="d-block w-100" alt="...">          
-    <h5>${miMazo.nombre}</h5>
-    <p>${miMazo.descrip}</p>
+    <h5 class="nombreCarta">${miMazo.nombre}</h5>
+    <p class="descriPersonaje">${miMazo.descrip}</p>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
