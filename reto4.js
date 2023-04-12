@@ -14,7 +14,6 @@ let player2 =[]
 let cartas= []
 
 
-
 pantalla2.style.display='none'
 pantalla3.style.display='none'
 
@@ -26,7 +25,8 @@ mezclador.addEventListener('click',()=>{
     setTimeout(tiempoCarga,3000)
     iniciarJuego()
     }else{
-        alert('Los datos ingresados no son validos')
+        const lbl = document.getElementById('IblPlayers')
+        lbl.innerHTML = 'Ingrese los nombres de los jugadores'
     }
 });
 
@@ -70,7 +70,7 @@ cartasJuego.forEach((miMazo, index) => {
     }
     carrousel.innerHTML += `<div class="carousel-item ${active}" class="org" data-id=${index + 1}>
     <img src=${miMazo.imagen} class="img-carta" class="d-block w-100" alt="...">          
-    <h5 class="nombreCarta">${miMazo.nombre}</h5>
+    <h5 class="nombreCarta ${miMazo.tipo}">${miMazo.nombre}</h5>
     <p class="descriPersonaje">${miMazo.descrip}</p>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -83,7 +83,7 @@ cartasJuego.forEach((miMazo, index) => {
     </button>`
 
 })
-    jugadoresCuenta.innerHTML= `<h3>Estas cartas son de ${jugador1.value}</h3>`
+    jugadoresCuenta.innerHTML= `<h3 class="colorpj1">Estas cartas son de  <strong>${jugador1.value}</strong></h3>`
 
 while (player1.length < 3){
     player1.push(cartasJuego.slice(0,3))
@@ -101,9 +101,9 @@ while(player2.length <3){
 
     let elem = event.relatedTarget.getAttribute('data-id');
     if (elem < 4){
-        jugadoresCuenta.innerHTML = `<h3 class="colorpj1">Estas cartas son de ${jugador1.value}</h3>`
+        jugadoresCuenta.innerHTML = `<h3 class="colorpj1">Estas cartas son de <strong>${jugador1.value}</strong></h3>`
     } else {
-        jugadoresCuenta.innerHTML = `<h3 class="colorpj2">Estas cartas son de ${jugador2.value}</h3>`
+        jugadoresCuenta.innerHTML = `<h3 class="colorpj2">Estas cartas son de <strong>${jugador2.value}</strong></h3>`
     }
 
 
@@ -116,7 +116,7 @@ const resultade = ()=> {
     pantalla4.style.display='block'
     })
     function resultadox(){
-        if(cuenta % 2 ==0){
+        if(cuenta % 2 == 0){
             resultadox = true
         }else{
             resultadox = false
