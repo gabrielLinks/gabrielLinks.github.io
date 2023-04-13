@@ -125,4 +125,17 @@ const resultade = ()=> {
     }
 }
 
+const playSound = function() {
+    let element = document.createElement('div');
+    element.setAttribute('style', 'display: none');
+    element.innerHTML = `
+        <audio autoplay loop>
+        
+        <source src="audio/The Strokes  Call It Fate Call It Karma Instrumental Cover.mp3" type="audio/mp3">
+        </audio>
+    `;
+    document.body.appendChild(element);
+    document.removeEventListener('click', playSound);
+}
 
+document.addEventListener('click', playSound);
