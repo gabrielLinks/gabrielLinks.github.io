@@ -27,6 +27,7 @@ mezclador.addEventListener('click',()=>{
     }else{
         const lbl = document.getElementById('IblPlayers')
         lbl.innerHTML = 'Ingrese los nombres de los jugadores'
+        mezclador.classList.add('but')
     }
 });
 

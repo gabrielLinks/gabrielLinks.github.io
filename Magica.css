@@ -59,8 +59,10 @@ header{
     display: block;
     background: transparent;
     border: none;
+    
     color:#6ba0bf;
 }
+
 
 .jugador2{
     color:#ff4081;
@@ -89,6 +91,10 @@ header{
     border-radius: 10px;
     background: transparent;
     color: #f8f8f5;
+} 
+.but:hover{
+    
+    border: solid 3px #ff0000;
 }
 
 
