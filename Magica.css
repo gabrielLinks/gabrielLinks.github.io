@@ -5,7 +5,7 @@ body{
     
     background: url(imagenesReto4/fondobotonn333333.gif);
     width: 100%;
-    height: 100vh;
+    height: 88vh;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
@@ -122,7 +122,7 @@ margin-right: 15px;
 }
 
 .nombreCarta{
-
+text-align: center;
 margin-top: 30px;
 color: #46aeae;
 margin-left: 15px;
