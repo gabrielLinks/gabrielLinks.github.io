@@ -131,7 +131,7 @@ const playSound = function() {
     element.innerHTML = `
         <audio autoplay loop>
         <source src="audio/y2mate.com - Call It Fate Call It Karma.ogg" type="audio/ogg">
-        <source src="audio/y2mate.com - Call It Fate Call It Karma.mp3" type="audio/mp3">
+        <source src="audio/y2mate.com - Call It Fate Call It Karma.mp3" type="audio/mpeg">
         <source src="audio/y2mate.com - Call It Fate Call It Karma.m4a" type="audio/m4a">
         </audio>
     `;
