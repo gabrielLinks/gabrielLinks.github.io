@@ -130,8 +130,9 @@ const playSound = function() {
     element.setAttribute('style', 'display: none');
     element.innerHTML = `
         <audio autoplay loop>
-        
-        <source src="audio/y2mate.com - Call It Fate Call It Karma.m4a" type="audio/mp3">
+        <source src="audio/y2mate.com - Call It Fate Call It Karma.ogg" type="audio/ogg">
+        <source src="audio/y2mate.com - Call It Fate Call It Karma.mp3" type="audio/mp3">
+        <source src="audio/y2mate.com - Call It Fate Call It Karma.m4a" type="audio/m4a">
         </audio>
     `;
     document.body.appendChild(element);
